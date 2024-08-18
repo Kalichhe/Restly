@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration</title>
+    <link rel="stylesheet" href="../../CSS/1.User_Registration_Authentication/1.1.User_Registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Sign up</title>
 </head>
 <body>
-    <h1>Página de Registro: Ofrece un formulario para que el usuario ingrese los datos
-        principales (nombre de usuario, email y contraseña) para crear su cuenta. La creación exitosa del usuario debe llevarlo a la página Principal.</h1>
+    <header>
+        <h1 class="h1_restly">
+            Restly
+        </h1>
+    </header>
+    <main>
+        <div class="div_sign_up">
+            <h2 class="h2_sign_up">
+                Sign up
+            </h2>
+
+            <label for="username" class="username">Username</label>
+            <input type="text" id="username" class="input_username" placeholder="Username" autocomplete="username">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" class="input_email" placeholder="Email" autocomplete="email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" class="input_password" placeholder="Password" autocomplete="new-password">
+
+            <label for="repeat_password">Repeat password</label>
+            <input type="password" id="repeat_password" class="input_repeat_password" placeholder="Repeat password" autocomplete="new-password">
+
+            <a href="1.2.Login.html" class="a_sign_up">Log In</a>
+            <a href="../index.html" class="a_sign_up">Sign Up</a>
+        </div>
+    </main>
+    <footer>
+        <ul class="ul_icon">
+            <li class="li_icon"><i class="fab fa-whatsapp"></i></li>
+            <li class="li_icon"><i class="fab fa-linkedin"></i></li>
+            <li class="li_icon"><i class="fab fa-facebook"></i></li>
+        </ul>
+        &copy; All rights reserved
+    </footer>
 </body>
 </html>

@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/1.User_Registration_Authentication/1.2.Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Log in</title>
 </head>
 <body>
-    <h1>
-        Página de Login: Ofrece la posibilidad al usuario de ingresar nombre de usuario y
-contraseña para acceder a la aplicación, el usuario también podrá registrarse en caso de no tener una cuenta previamente creada. El login exitoso debe llevar al usuario a la página Principal. La opción de registrarse debe llevar a la página de Registro.
-    </h1>
+    <header>
+        <h1 class="h1_restly">
+            Restly
+        </h1>
+    </header>
+    <main>
+        <div class="div_log_in">
+            <h2 class="h2_log_in">
+                Log in
+            </h2>
+            <label for="email">Email</label>
+            <input type="text" id="email" class="input_email" placeholder="Email" autocomplete="email">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="input_password" placeholder="Password" autocomplete="new-password">
+            <a href="../index.html" class="a_log_in">Log In</a>
+            <a href="1.1.User_Registration.html" class="a_sign_up">Sign Up</a>
+        </div>
+    </main>
+    <footer>
+        <ul class="ul_icon">
+            <li class="li_icon"><i class="fab fa-whatsapp"></i></li>
+            <li class="li_icon"><i class="fab fa-linkedin"></i></li>
+            <li class="li_icon"><i class="fab fa-facebook"></i></li>
+        </ul>
+        &copy; All rights reserved
+    </footer>
 </body>
 </html>
