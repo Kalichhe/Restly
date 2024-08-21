@@ -1,4 +1,15 @@
+.main {
+    display: flex;
+}
+
+.section {
+    flex: 1;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Roboto Condensed, Helvetica, sans-serif;
-
 }
