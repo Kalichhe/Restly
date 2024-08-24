@@ -35,6 +35,7 @@ main div:first-child img {
 .div_sign_up {
     padding: 40px;
     flex: 1;
+    position: relative;
 }
 
 .h2_sign_up {
@@ -71,17 +72,11 @@ main div:first-child img {
     border-radius: 5px;
 }
 
-.div_sign_up {
-    position: relative;
-    padding: 40px;
-    flex: 1;
-}
-
 .logo_form {
     position: absolute;
     top: 0;
     right: 0;
-    width: 95px; 
+    width: 95px;
     height: auto;
     margin: 10px;
 }
