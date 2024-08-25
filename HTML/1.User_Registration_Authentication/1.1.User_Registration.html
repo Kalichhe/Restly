@@ -32,7 +32,7 @@
             <input type="password" id="repeat_password" class="input_repeat_password" placeholder="Repeat password" autocomplete="new-password">
 
             <a href="1.2.Login.html" class="a_sign_up">Log In</a>
-            <a href="../index.html" class="a_sign_up">Sign Up</a>
+            <a class="a_sign_up" onclick="getValueSignup()">Sign Up</a>
         </div>
     </main>
     <footer>
@@ -43,5 +43,26 @@
         </ul>
         &copy; All rights reserved
     </footer>
+    <script>
+
+        function getValueSignup() {
+            // Se recogen los datos de los inputs ofrecidos por HTML
+            let Username = document.getElementById('username').value;
+            let Email = document.getElementById('email').value;
+            let Password = document.getElementById('password').value;
+            let RepeatPassword = document.getElementById('repeat_password').value;
+
+            // Se guardaran los datos en el LocalStorage
+            localStorage.setItem('Username', Username);
+            localStorage.setItem('Email', Email);
+            localStorage.setItem('Password', Password);
+            localStorage.setItem('RepeatPassword', RepeatPassword);
+
+            alert('Melo')
+
+            return { Username, Email, Password, RepeatPassword };
+        }
+
+    </script>
 </body>
 </html>

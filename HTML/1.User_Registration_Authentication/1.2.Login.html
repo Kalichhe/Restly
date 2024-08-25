@@ -25,7 +25,7 @@
             <label for="password">Password</label>
             <input type="password" id="password" class="input_password" placeholder="Password"  autocomplete="new-password">
 
-            <a href="../index.html" class="a_log_in">Log In</a>
+            <a class="a_log_in" onclick="getValueLogin()">Log In</a>
             <a href="1.1.User_Registration.html" class="a_sign_up">Sign Up</a>
         </div>
     </main>
@@ -37,5 +37,29 @@
         </ul>
         &copy; All rights reserved
     </footer>
+
+    <script>
+
+        function getValueLogin() {
+            // Obtenemos los datos del documento
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            // Obtenemos los datos del LocalStorage
+            let Email = localStorage.getItem('Email');
+            let Password = localStorage.getItem('Password');
+
+            // Validamos
+            if (email === Email && password === Password) {
+                alert('Login successful');
+                window.location.href = '../index.html';
+            } else {
+                alert('Login failed');
+            }
+
+            console.log(email, password);
+        }
+
+    </script>
 </body>
 </html>
