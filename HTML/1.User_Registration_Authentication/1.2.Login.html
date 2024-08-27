@@ -38,28 +38,6 @@
         &copy; All rights reserved
     </footer>
 
-    <script>
-
-        function getValueLogin() {
-            // Obtenemos los datos del documento
-            let email = document.getElementById("email").value;
-            let password = document.getElementById("password").value;
-
-            // Obtenemos los datos del LocalStorage
-            let Email = localStorage.getItem('Email');
-            let Password = localStorage.getItem('Password');
-
-            // Validamos
-            if (email === Email && password === Password) {
-                alert('Login successful');
-                window.location.href = '../index.html';
-            } else {
-                alert('Login failed');
-            }
-
-            console.log(email, password);
-        }
-
-    </script>
+    <script src="/JS/1.User_Registration_Authentication/1.2.Login.js"></script>
 </body>
 </html>
