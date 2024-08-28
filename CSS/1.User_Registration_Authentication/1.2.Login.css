@@ -63,6 +63,7 @@ main div:first-child img {
 
 .a_log_in {
     display: block;
+    width: 105%;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
@@ -74,6 +75,7 @@ main div:first-child img {
 
 .a_sign_up {
     display: block;
+    width: 105%;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
