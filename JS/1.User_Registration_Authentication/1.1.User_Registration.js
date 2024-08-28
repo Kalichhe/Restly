@@ -1,17 +1,17 @@
 
 let validatePassword = (Password, RepeatPassword) => {
     if (Password == '') {
-        alert('Ingresa por lo menos un caracter')
-    } else if (RepeatPassword == ''){
-        alert('Ingresa por lo menos un caracter')
+        alert('Por favor, ingrese una contraseña.')
+    } else if (RepeatPassword == '') {
+        alert('Por favor, repita la contraseña.')
     } else if (Password.length < 12) {
-        alert('La contraseña debe de ser mayor o igual a 12 caracteres')
+        alert('La contraseña debe tener al menos 12 caracteres.')
     } else if (Password.length > 20) {
-        alert('La contraseña no puede ser mayor a 20 caracteres')
+        alert('La contraseña no debe exceder los 20 caracteres.')
     } else if (RepeatPassword.length < 12) {
-        alert('La contraseña debe de ser mayor o igual a 12 caracteres')
+        alert('La contraseña repetida debe tener al menos 12 caracteres.')
     } else if (RepeatPassword.length > 20) {
-        alert('La contraseña no puede ser mayor a 20 caracteres')
+        alert('La contraseña repetida no debe exceder los 20 caracteres.')
     } else {
         return true;
     }
@@ -19,17 +19,17 @@ let validatePassword = (Password, RepeatPassword) => {
 
 let validateUsername = (Username, Email) => {
     if (Username == '') {
-        alert('Ingrese por lo menos un caracter')
+        alert('Por favor, ingrese su nombre de usuario.')
     } else if (Username.includes(' ')) {
-        alert('El username no puede contener espacios');
+        alert('El nombre de usuario no puede contener espacios.')
     } else if (!/^[a-zA-Z][a-zA-Z0-9]+$/.test(Username)) {
-        alert('El username no puede contener caracteres especiales y no debe de iniciar con número');
+        alert('El nombre de usuario no puede contener caracteres especiales y debe comenzar con una letra.')
     } else if (Email == '') {
-        alert('Ingrese por lo menos un caracter')
+        alert('Por favor, ingrese su correo electrónico.')
     } else if (Username.length < 8) {
-        alert('El Username debe de ser mayor a 8 caracteres')
+        alert('El nombre de usuario debe tener al menos 8 caracteres.')
     } else if (Username.length > 15) {
-        alert('El Username debe de ser menor a 15 caracteres')
+        alert('El nombre de usuario no debe exceder los 15 caracteres.')
     } else {
         return true;
     }
