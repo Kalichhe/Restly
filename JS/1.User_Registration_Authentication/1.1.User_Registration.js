@@ -1,9 +1,9 @@
 
 let validatePassword = (Password, RepeatPassword) => {
     if (Password == '') {
-        alert('Aaaa, entonces vale mia')
+        alert('Ingresa por lo menos un caracter')
     } else if (RepeatPassword == ''){
-        alert('Aaaa, ahora si se la gano')
+        alert('Ingresa por lo menos un caracter')
     } else if (Password.length < 12) {
         alert('La contraseña debe de ser mayor o igual a 12 caracteres')
     } else if (Password.length > 20) {
@@ -19,13 +19,13 @@ let validatePassword = (Password, RepeatPassword) => {
 
 let validateUsername = (Username, Email) => {
     if (Username == '') {
-        alert('Parcero ingrese pues algo, ome')
+        alert('Ingrese por lo menos un caracter')
     } else if (Username.includes(' ')) {
-        alert('El Username no puede contener espacios');
+        alert('El username no puede contener espacios');
     } else if (!/^[a-zA-Z][a-zA-Z0-9]+$/.test(Username)) {
-        alert('El Username no puede contener caracteres especiales y no debe de iniciar con número');
+        alert('El username no puede contener caracteres especiales y no debe de iniciar con número');
     } else if (Email == '') {
-        alert('Chamo, entonces??')
+        alert('Ingrese por lo menos un caracter')
     } else if (Username.length < 8) {
         alert('El Username debe de ser mayor a 8 caracteres')
     } else if (Username.length > 15) {
