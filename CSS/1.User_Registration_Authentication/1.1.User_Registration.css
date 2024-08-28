@@ -63,6 +63,7 @@ main div:first-child img {
 
 .button_sign_up {
     display: block;
+    width: 105%;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
